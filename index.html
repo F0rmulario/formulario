@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>FORMULARIO</title> 
+</head>
+<body>
+    <div class="container">
+        <header>FORMULARIO</header>
+
+        <form action="main.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Datos personales</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre completo</label>
+                            <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Fecha de nacimiento</label>
+                            <input type="date" name="fecha" placeholder="Introduzca su cumpleaños" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="Introduzca su email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Número de teléfono</label>
+                            <input type="number" name="numero" placeholder="Introduzca su número" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Genero</label>
+                            <select required>
+                                <option disabled selected>Seleccione su genero</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ocupación</label>
+                            <input type="text" placeholder="Ej: Desocupad@">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Datos de identidad</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>DNI</label>
+                            <input type="text" name="dni" placeholder="introduzca su DNI" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Número de cuenta</label>
+                            <input type="number" name="cuenta" placeholder="Opcional">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Banco al que pertenece</label>
+                            <input type="text" name="banco"placeholder="Introduzca su banco" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>País de residencia</label>
+                            <input type="text" name="pais"placeholder="Introduzca su País" required>
+                        </div>
+
+
+
+                    <button class="button">
+                        <span class="btnText">TERMINAR</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+</form>
+            
+    <script src="script.js"></script>
+</body>
+</html>
